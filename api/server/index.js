@@ -114,6 +114,7 @@ const startServer = async () => {
   app.use('/images/', validateImageRequest, routes.staticRoute);
   app.use('/api/share', routes.share);
   app.use('/api/roles', routes.roles);
+  app.use('/api/toiee', routes.toiee);
   app.use('/api/agents', routes.agents);
   app.use('/api/banner', routes.banner);
   app.use('/api/bedrock', routes.bedrock);
